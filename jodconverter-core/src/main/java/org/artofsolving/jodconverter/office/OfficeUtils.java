@@ -102,7 +102,12 @@ public class OfficeUtils {
 
     public static File getOfficeExecutable(File officeHome) {
         if (PlatformUtils.isMac()) {
-            return new File(officeHome, "MacOS/soffice.bin");
+            File file = new File(officeHome, "MacOS/soffice.bin");
+            if (!file.isFile()) {
+                // LibreOffice 4.1.0
+                new File(officeHome, "MacOS/soffice");
+            }
+            return file;
         } else {
             return new File(officeHome, "program/soffice.bin");
         }
