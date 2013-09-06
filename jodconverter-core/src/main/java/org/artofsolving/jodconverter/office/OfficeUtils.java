@@ -105,7 +105,7 @@ public class OfficeUtils {
             File file = new File(officeHome, "MacOS/soffice.bin");
             if (!file.isFile()) {
                 // LibreOffice 4.1.0
-                new File(officeHome, "MacOS/soffice");
+                file = new File(officeHome, "MacOS/soffice");
             }
             return file;
         } else {
