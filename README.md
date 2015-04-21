@@ -1,3 +1,8 @@
+eXo Platform
+=====
+
+The eXo Platform project is forking this project because it seems dead and we need to bring some fixes to it. We hope that someone from the JODConverter project will be able to apply our fixes at some point.
+
 JODConverter
 ============
 
@@ -9,4 +14,3 @@ the code here at GitHub in the hope that a well-maintained fork will emerge.
 
 See the [Google Code](http://code.google.com/p/jodconverter/) project for more
 info.
-
